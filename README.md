@@ -19,8 +19,8 @@ POST request to add items to the shopping cart.
   * `/cart` returns a JSON representation of the shopping cart
 
 Run the application in main.py in the usual way (first run `dbschema.py` to create the database).  
-The default HTML page delivered links to the two
-JSON URLs and provides an example form that can add to the cart.  
+The default HTML page delivered links to the two JSON URLs and provides an example forms that can add to 
+or update the cart.  
 
 Note that this implementation relies on the `beaker` module to provide sessions, you'll need to install
 `beaker` and `bottle-beaker` to run this code.  

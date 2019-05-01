@@ -23,17 +23,27 @@
 
         <form action="/cart" method="post">
             <fieldset>
-                <legend>This form will add or update the cart with a given product id</legend>
+                <legend>This form will add to the cart with a given product id</legend>
                 <ul>
                     <li>Product: <input type="number" name="productid"></li>
                     <li>Quantity: <input type="number" name="quantity"></li>
-                    <li>Update: <input type="checkbox" name="update" value="1"></li>
                     <li><input type="submit"></li>
                 </ul>
+                <input type="hidden" name="update" value="0">
             </fieldset>
         </form>
 
-
+        <form action="/cart" method="post">
+            <fieldset>
+                <legend>This form will update the cart with a given product id, or remove if quantity=0</legend>
+                <ul>
+                    <li>Product: <input type="number" name="productid"></li>
+                    <li>Quantity: <input type="number" name="quantity"></li>
+                    <li><input type="submit"></li>
+                </ul>
+                <input type="hidden" name="update" value="1">
+            </fieldset>
+        </form>
 
      <div id="message"></div>
 
