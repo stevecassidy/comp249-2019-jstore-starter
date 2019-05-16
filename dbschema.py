@@ -69,7 +69,7 @@ def sample_data(db):
                     first = False
                 else:
                     inv = int(random.random()*100)
-                cost = int(random.random()*200) + 0.95
+                cost = 33 + id
                 description = "<p>" + row['Body (HTML)'] + "</p>"
                 data = (id, row['Title'], description, row['Image Src'], row['Tags'], inv, cost)
                 cursor.execute(sql, data)
